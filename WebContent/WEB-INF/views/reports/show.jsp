@@ -6,7 +6,9 @@
         <c:choose>
             <c:when test="${report != null}">
                 <h2>日報　詳細ページ</h2>
-
+                <form method="POST" action="<c:url value='/follow/update' />">
+                     <input type="hidden" name="_token" value="${_token}" />
+                </form>
                 <table>
                     <tbody>
                         <tr>
